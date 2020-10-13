@@ -1,0 +1,62 @@
+.footer{
+    background: $primary;
+    color:white;
+    font-weight: bold;
+    font-size: 10px;
+
+    
+    a{
+        font-size: 10px;
+       
+        i{
+            color: white!important;
+            font-size: 20px;
+        }
+        padding: 10px;
+        display: inline-block;
+    }
+
+    @media( max-width: $mobile-max-breakpoint){
+        .grid-container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .plyn_info{
+        background: $secondary;
+        color:white;
+        text-align: center;
+        font-size: 10px;
+        @media( min-width: $mobile-max-breakpoint)
+        {
+            padding: 45px 40px;
+            font-size: 16px;
+        }
+        @media( max-width: $mobile-max-breakpoint){
+            padding: 15px 0; 
+            font-size: 10px!important;
+        }
+        
+    }
+}
+
+.footer{
+    
+    .footer-content
+    {
+        display: flex;
+        
+
+        @media( min-width: $mobile-max-breakpoint)
+        {
+            padding: 45px 40px;
+            font-size: 16px;
+        }
+        @media( max-width: $mobile-max-breakpoint){
+            padding: 15px 0; 
+            font-size: 10px!important;
+            justify-content: center;
+
+        }
+    }
+}
