@@ -1,0 +1,14 @@
+Titulo Verdana 20px Medium a 40px c #2c91a1
+Texto Verdana 12px Medum a 22px c #575757
+
+
+Informativo Titulo
+Verdana 30pt c #fff
+Informativo Sub
+Verdana 11pt
+
+
+Na Plym.com.br 15px a 20px
+Siga a Plym   11px a 20px
+
+padding 20px

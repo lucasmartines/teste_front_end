@@ -4,22 +4,27 @@
     background: $primary;
 
     .app-bar
-    {
+    { 
 
-        background: $secondary;
-        padding-right: 0rem;
-        padding-left: 0rem;
+        background: $primary;
+        
+         @media( max-width: $mobile-max-breakpoint){
+            padding-right: 0rem;
+            padding-left: 0rem;    
+         }
 
 
+         // the last icon in right
         .app-bar__figure{
             background-color: $primary;    
-            padding: 25px 15px;
+            padding: 0 27px;
     
         }
 
         .app-bar-left-content{
-            width: 84%;
-            @media( max-width: $mobile-max-breakpoint){
+            width: 87%;
+            background: $secondary; 
+            @media( max-width: 640px){
                 width: 100%;
             } 
         }
@@ -29,23 +34,27 @@
                 text-align: center;
             }
 
+            // the left image
             .app-bar__image_header{
                
                 @media( max-width: $mobile-max-breakpoint)
                 {
                     padding-left:  0;
                 }
-                margin-top:25px;
+                padding-left:  39px;
+
+                margin-top:32px;
                 margin-bottom: 33px;
-                
-                padding-left:  32px;;
-                
                 background: $secondary;
     
-               
+                   img{
+                        height: 88px;                
+                   }
             }
         }
         
+
+        // where stays "informativo"
         .app-bar__info{
 
 
@@ -60,6 +69,8 @@
 
 
             padding-right: 32px;
+            padding-bottom: 16px;
+            padding-top: 14px;
 
             @media( max-width: $mobile-max-breakpoint){
 
@@ -70,10 +81,14 @@
                 width: 100%;
                 
                 .app-bar__info__title{
-                    font-size: 22px;
+                    font-size: 30px;
+                    line-height: 30px;
+                    margin-bottom: 12px;
                 }
                 .app-bar__info__sub-title{
-                    font-size: 10px;
+                    font-size: 11px;
+                    line-height: 11px;
+                    letter-spacing: 80%;
                     font-weight: bold;
                 }
             }
@@ -92,6 +107,5 @@
             }
 
         }
-
     }
 }
